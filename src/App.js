@@ -8,6 +8,7 @@ import ContactForm from "./pages/Contact"
 import portofolio from './portofolio.json'
 import PortofolioPage from "./components/PortofolioPage";
 import DetailsPortofolio from "./pages/DetailsPortofolio";
+import DaftarPortofolio from "./components/PortofolioCard";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="about" element={ <About/> } />
         <Route path="contact" element={ <ContactForm/> } />
-        <Route path="/portofolio/:id" element={<DetailsPortofolio/>} />
-      </Routes>
+        <Route path="/portofolio/:id" element={<DaftarPortofolio />} />
+              </Routes>
       <Footer />
     </div>
   )

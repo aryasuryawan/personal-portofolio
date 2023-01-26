@@ -8,14 +8,18 @@ const PortofolioPage = () => {
   // Hidden for simplicity
   return (
     <article>
+      <div className='container mx-auto px-6'>
       <h2>Portofolio</h2>
       {portofolio.map((data) => (
         <div key={data.id}>
           
-            <h2>{data.title}</h2>
+             <h2>{data.title}</h2>
+          </div>
+           
           
-        </div>
+        
       ))}
+      </div>
     </article>
   );
 };
